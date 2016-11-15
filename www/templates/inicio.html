@@ -1,0 +1,12 @@
+<ion-view view-title="Inicio">
+  <ion-content>
+    <div class="card" ng-repeat="mascota in mascotas">
+        <a class="item item-thumbnail-left" href="#">
+          <img ng-src="{{mascota.foto}}" class="fullscreen-image">
+          <h2>{{mascota.nombre}}</h2>
+          <p>{{mascota.ubicacion}}</p>
+          <p>{{mascota.detalles}}</p>
+        </a>         
+    </div>    
+  </ion-content>
+</ion-view>

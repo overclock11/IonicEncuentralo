@@ -1,0 +1,72 @@
+<ion-view view-title="Reporta tu mascota">
+    <ion-content>
+        <div class="card">               
+            <div class="list list-inset">
+             <h3 class="title">Datos de tu mascota</h3>
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Nombre </span>
+                <h2><input type="text" name="nombremascota"></h2>
+              </label>
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Donde se perdió <h6>(Aproximadamente)</h6></span>
+                <input type="text" name="diraprox">
+              </label>
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Detalles adicionales</span>
+                <textarea name="detalle"></textarea>                
+              </label>
+              <div class="item item-divider">
+                  Carga fotos recientes de tu mascota
+              </div>
+              <label class="item item-input item-stacked-label">
+                    <input type="file" id="imagen" ng-model="imagen" name="imagen"> 
+                    <button ng-click="upload()">Cargar</button>         
+              </label>              
+            </div>        
+        </div>
+
+   <!-- divide los datos -->
+                             
+        <div class="card">               
+            <div class="list list-inset">
+             <h3 class="title">Datos de contacto</h3>
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Nombre </span>
+                <h2><input type="text" name="nombrecontacto"></h2>
+              </label>
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Teléfono</span>
+                <input type="tel" name="telefono">
+              </label>
+              
+              <label class="item item-input item-select">
+                <div class="input-label">
+                  Departamento
+                </div>
+                <select name="departamento">
+                  <option>Cundinamarca</option>
+                  <option selected>Valle del cauca</option>
+                  <option>Guajira</option>
+                </select>
+              </label>
+              <label class="item item-input item-select">
+                <div class="input-label">
+                  Ciudad
+                </div>
+                <select name="ciudad">
+                  <option>Bogotá</option>
+                  <option selected>Cali</option>
+                  <option>Valledupar</option>
+                </select>
+              </label>              
+              <label class="item item-input item-stacked-label">
+               <span class="input-label">Recompensa</span>
+                <input type="number" name="recompensa" min="0">
+              </label>                                    
+            </div>                 
+        </div>
+        <button class="button button-block button-positive">
+            Reportar mascota
+        </button>                          
+    </ion-content>
+</ion-view>
